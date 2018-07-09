@@ -9,11 +9,13 @@
 
 program.allowUnknownOption();
 // // program.version(appInfo.version);
+program.version('0.0.5')
 
 program
     .command('init')
     .description('初始化当前目录文件')
-    .action(() => {
+    .action(function(){
+        console.log('start..')
         if (!shell.which('git')) {
           shell.echo('Sorry, this script requires git');
           shell.exit(1);
