@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-console.log('Hello, world!');
 var shell = require('shelljs');
 var program = require('commander');
 const fs = require('fs')
 
 program.allowUnknownOption();
-program.version('0.0.8');
+program.version('1.0.0');
 
 program
     .command('init')
