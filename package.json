@@ -1,6 +1,6 @@
 {
   "name": "dvax-starter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "bin": {
     "dvax": "/bin/index.js"
