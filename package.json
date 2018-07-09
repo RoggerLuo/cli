@@ -14,5 +14,10 @@
   "dependencies": {
     "commander": "^2.16.0",
     "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "balanced-match": "^1.0.0",
+    "brace-expansion": "^1.1.11",
+    "wrappy": "^1.0.2"
   }
 }
