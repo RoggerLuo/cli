@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "bin": {
-    "createapp": "/bin/index.js"
+    "dvax": "/bin/index.js"
   },
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.16.0"
+    "commander": "^2.16.0",
+    "shelljs": "^0.8.2"
   }
 }
