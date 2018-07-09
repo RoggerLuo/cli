@@ -5,7 +5,7 @@ var program = require('commander');
 const fs = require('fs')
 
 program.allowUnknownOption();
-program.version('0.0.5');
+program.version('0.0.8');
 
 program
     .command('init')
