@@ -24,10 +24,7 @@ program
         shell.rm('-rf','react-scaffold/.git');
         shell.exec('cp -rf react-scaffold/* ./')
         shell.rm('-rf','react-scaffold')
-
-        console.log('正在执行npm install')
-        shell.exec('npm install')
-        shell.echo('建构完成，(如果npm安装失败，可以后续自行安装)')
+        console.log('建构完成，请手动执行npm install')
         shell.exit(1);
     });
 
