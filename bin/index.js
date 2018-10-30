@@ -20,10 +20,16 @@ program
         }
         console.log('正在从github下载数据')
         shell.exec('git clone https://github.com/RoggerLuo/react-scaffold.git')
-        shell.rm('-rf','react-scaffold/.git');
-        shell.exec('cp -rf react-scaffold/* ./')
-        shell.rm('-rf','react-scaffold')
-        console.log('建构完成，请手动执行npm install')
+        shell.rm('-rf','react-scaffold/.git')
+        shell.exec('mv react-scaffold react-app')
+        // shell.exec('cp -rf react-scaffold/* ./')
+        // shell.rm('-rf','react-scaffold')
+        // console.log('建构完成，请手动执行npm install')
+        shell.exec('cd react-app')
+        shell.exec('npm install')
+        console.log('安装依赖..')
+        shell.exec('npm run start')
+        console.log('启动开发环境..')
         shell.exit(1);
     });
 
